@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  box-shadow: 2px 2px 5px rgba(50, 146, 166, 0.8);
+  opacity: 0.8;
+  background: #ffff;
+}
+.navbar .nav-item {
+  font-size: 1.4rem;
+
+  padding-right: 1.4rem;
+  word-spacing: 2px;
+}
+
+#showcase {
+  background-image: linear-gradient(
+      rgba(50, 146, 166, 0.6),
+      rgba(50, 146, 166, 0.5)
+    ),
+    url(/img/mountains.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 100vh;
+}
+
+#newsletter button {
+  background-color: rgba(50, 146, 166, 0.8);
+  border-style: none;
+}
+
+#about h2 {
+  color: rgba(50, 146, 166, 0.8);
+}
+
+#about .info-header {
+  width: 50%;
+  border-bottom: #ddd solid 2px;
+}
+
+#authors h2 {
+  color: rgba(50, 146, 166, 0.8);
+}
+#authors img {
+  margin-top: -50px;
+}
+#authors .card {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#authors .card:hover {
+  background: rgba(50, 146, 166, 0.8);
+  color: #ffff;
+}
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+  }
+  #showcase h3 {
+    font-size: 4rem;
+  }
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+}
